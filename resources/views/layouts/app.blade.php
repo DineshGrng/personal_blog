@@ -10,6 +10,7 @@
   <title>Personal Blog</title>
   <!-- General CSS Files -->
   <link rel="stylesheet" href="/assets/css/app.min.css">
+  <link rel="stylesheet" href="/assets/bundles/summernote/summernote-bs4.css">
   <!-- Template CSS -->
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="stylesheet" href="/assets/css/components.css">
@@ -177,7 +178,9 @@
       {{-- main side-bar  --}}
         <x-sidebar-component/>
       <!-- Main Content -->
-      {{ $slot }}
+      <div class="main-content">
+            {{ $slot }}
+      </div>
       {{-- <footer class="main-footer">
         <div class="footer-left">
           <a href="templateshub.net">Templateshub</a></a>
@@ -190,8 +193,12 @@
   <!-- General JS Scripts -->
   <script src="/assets/js/app.min.js"></script>
   <!-- JS Libraies -->
+
+  <script src="/assets/bundles/summernote/summernote-bs4.js"></script>
   <script src="/assets/bundles/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/bundles/ckeditor/ckeditor.js"></script>
   <!-- Page Specific JS File -->
+  <script src="/assets/js/page/ckeditor.js"></script>
   <script src="/assets/js/page/index.js"></script>
   <!-- Template JS File -->
   <script src="/assets/js/scripts.js"></script>
